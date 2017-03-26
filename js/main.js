@@ -336,7 +336,7 @@ function slideShow() {
 		},50);//10次*50ms
 	}
 }
-setTimeOut(slideShow(),0);//调用
+slideShow();//调用
 
 /* 轮播图结束 */
 
@@ -370,7 +370,7 @@ function scroll() {
 		showPic();
 	});
 }
-scroll();//调用
+setTimeOut(scroll,0);//调用
 
 /* 播放视频 */
 eventUtil.addHandler($("v-img"),"click",function () {
