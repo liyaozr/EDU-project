@@ -336,7 +336,8 @@ function slideShow() {
 		},50);//10次*50ms
 	}
 }
-slideShow();//调用
+setTimeOut(slideShow(),0);//调用
+
 /* 轮播图结束 */
 
 /* 场景秀开始 */
