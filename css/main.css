@@ -1,0 +1,170 @@
+html,body{width:100%;height:100%;font-family: "Microsoft YaHei";}
+@media screen and (max-width:1205px){
+	html,body{min-width: 965px;}
+	.ad-detail,.g-head,.m-course,.m-main,.g-wrap{width: 960px;}
+	.m-course div{width:264px;}
+	.m-main .m-m{width:737px;}
+    .g-foot .g-wrap div{width: 483px;}
+    .g-foot .g-wrap ul{width: 159px;}
+}
+@media screen and (min-width:1205px){
+	.ad-detail,.g-head,.m-course,.m-main,.g-wrap{width: 1205px;}
+	.m-course div{width:345px;}
+	.m-main .m-m{width:982px;}
+    .g-foot .g-wrap div{width: 605px;}
+    .g-foot .g-wrap ul{width: 200px;}
+}
+
+/* 广告设置 */
+.ad{position:relative;top:0;font-size:12px;line-height:36px;width:100%;height:36px;background:#f3f3f3;}
+.ad .ad-detail{margin: 0 auto;position:relative;}
+.ad a{color:#21a557;}
+.ad a:hover{text-decoration: underline;}
+.ad span{position:absolute;right:1px;cursor:pointer;}
+.ad span i{display: inline-block; width: 13px;height: 10px; background:url(../image/icon.png) -204px -31px;}
+
+/* 登录框 */
+#cover{display: none; width:100%; height:100%; background-color:#000; filter:alpha(opacity=50);  opacity:0.5; position:fixed; left:0px; top:0px; z-index:800;}
+#login{display: none; position: absolute;width: 388px;height: 288px;top: 50%;left: 50%;margin: -144px 0 0 -194px;z-index:801;background: #fff;}
+#login h2{font-size: 18px;margin: 30px 0 22px 41px;font-family: "Microsoft YaHei";}
+#login p{font-size: 12px; color: #f00;height: 15px;margin-left: 41px;}
+#login #l-close{position: absolute;right: 10px;top: 10px;cursor: pointer; display: inline-block; width: 15px;height: 15px; background:url(../image/icon.png) -204px -31px;font-size: 16px;}
+#login input{display: block;margin-left: 41px;width: 285px;height: 45px;background: #fafafa;border:1px solid #dfdfdf;padding-left: 10px;vertical-align: middle;box-shadow: 2px 2px 0 #f1f1f1 inset;}
+#login button{display: block;width: 294px;height: 46px;background: url(../image/icon.png) -5px -152px no-repeat;border: none;margin: 15px 0 0 41px;}
+
+
+/* 头部设置 */
+.g-head{overflow:hidden;padding:33px 0 37px;margin: 0 auto;}
+.g-head .m-logo{font:bold 22px/22px 'Mcosoft YaHei',sans-serif;float:left;width:240px;height:22px;text-indent:80px;color:#333;background:url(../image/icon.png) -230px -30px no-repeat;}
+/* 关注 */
+.g-head .m-focus{float:left;margin-left:32px;}
+.g-head .m-focus #focus{display:inline-block;width:54px;height:21px;margin-right:14px;cursor:pointer;vertical-align:middle;border:none;background:url(../image/icon.png) -85px -4px no-repeat;}
+.g-head .m-focus #focus.focused{background:url(../image/icon.png) -5px -209px;width: 107px;}
+.g-head .m-focus #focus.focused:hover{background:url(../image/icon.png) -123px -209px;}
+
+/* 导航 */
+.g-head .m-nav{float:right;font-size:16px;}
+.g-head .m-nav a{display:inline-block;margin-left:30px;vertical-align:middle;height:22px;}
+.g-head .m-nav a:hover{color: #39a030;}
+.g-head .m-nav #search{width:20px;background:url(../image/icon.png) -240px -4px;}
+.g-head .m-nav #search:hover{background:url(../image/icon.png) -273px -4px;}
+/* /头部设置 */
+
+/* 轮播图 */
+.m-banner {position:relative;}
+.m-banner img {width:100%;height:auto;display: none;}
+.m-banner img.b-active{display: block;}
+
+.m-banner .pointer{position:absolute;bottom: 10px;left:50%;width:50px;transform:translate(50%);}
+.m-banner i{display:inline-block;width:10px;height:10px;border-radius:5px;background:white;cursor: pointer;}
+.m-banner i + i{margin-left:10px;}
+.m-banner .current{background:black;}
+/* /轮播图 */
+
+/* 网站介绍 */
+.m-course{height:177px;margin: 60px auto 38px;}
+.m-course div{float:left;}
+.m-course div + div{margin-left:84px;}
+.m-course div div{float:left;width:80px;height:90px;margin-right:18px;}
+.m-course div .m-icon1{background:url(../image/icon.png) -99px -59px;}
+.m-course div .m-icon2{background:url(../image/icon.png) -5px -59px;}
+.m-course div .m-icon3{background:url(../image/icon.png) -203px -59px;}
+.m-course h2{font-size:22px;margin-bottom:18px;}
+.m-course p{font-size:14px;overflow:hidden;margin-bottom: 30px;}
+.m-course a{color:#39a030;margin-left: 98px;}
+.m-course a:hover{text-decoration: underline;}
+/* /网站介绍 */
+
+/* 从这里开始有背景色 */
+.wrap{background: #f8f8f8;}
+
+/* 场景秀 */
+.m-show{width:100%;height:220px;margin-bottom:83px;position:relative;overflow: hidden;}
+.m-show ul{position:absolute;top:0;left:0;}
+.m-show li{float:left;margin-right: 4px;}
+/* /场景秀 */
+
+/* 主要课程内容，这里分两部分：
+   1-课程主题模块
+   2-侧栏
+ */
+.m-main{margin: 0 auto;}
+.m-main.clearfix:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+
+/*
+1-课程主题模块 m-m
+(1) 课程导航  m-tab
+(2) 课程内容  m-lesson
+ */
+.m-main .m-m{float: left;}
+
+/* 课程导航 */
+.m-m .m-tab li{display: inline-block;width: 198px;height: 46px;line-height: 46px; font-size: 20px;text-align: center;background: #fff;margin-bottom: 28px;cursor: pointer;border-radius: 5px;box-shadow: 2px 2px 2px #d4d3d3;}
+.m-m .m-tab li+li{margin-left: -5px;z-index:-1;}
+.m-m .m-tab .t-active{background: #39a030;color: white;}
+
+/* 课程内容 */
+.m-m .m-lesson.clearfix:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+.m-m .m-lesson .l-wrap{position: relative;float: left; width: 223px;height: 226px;border: 1px solid #fff;background: #fff;margin-right: 20px;margin-bottom: 22px;box-shadow: 2px 2px 2px #d4d3d3;}
+
+.m-m .m-lesson .l-wrap .preview{cursor: pointer;}
+.m-m .m-lesson .l-wrap .preview img{width:222px;height: auto;}
+.m-m .m-lesson .l-wrap .preview p{text-overflow:ellipsis; overflow:hidden; white-space:nowrap;margin: 8px 5px 0;}
+.m-m .m-lesson .l-wrap .preview .provider{color: #bbb;}
+.m-m .m-lesson .l-wrap .preview .learner{margin: 8px 5px 0;display:inline-block;background: url(../image/icon.png) -2px -0.5px no-repeat;height: 12px;padding: 2px; border: 1px solid #bbb;border-radius: 3px; text-indent: 13px;font-size: 12px;color: #bbb}
+.m-m .m-lesson .l-wrap .preview .price{color: #f00;}
+/* 课程内容的hover效果 */
+.l-wrap .detail{display: none;width: 480px;border: 1px solid #d0cfd0;position: absolute;top: -10px;left: -10px;z-index: 999;background: #fff;}
+.l-wrap .detail .infor{height: 133px;margin-bottom: 20px;}
+.l-wrap .detail img{width:222px;height: auto;float: left;margin: 10px 18px 20px 10px;cursor: pointer;}
+.l-wrap .detail .introduce{height: 93px;float: left; margin-top: 10px;width: 220px;}
+.l-wrap .detail .introduce h3{font-size: 18px;margin-bottom: 17px;text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.l-wrap .detail .introduce span{display: inline-block;margin-bottom: 10px;}
+.l-wrap .detail .introduce .learn span{width: 16px;height: 12px;background: url(../image/icon.png) -2px -2px;margin-bottom: 0;}
+.l-wrap .detail .description{width:440px;min-height: 44px; padding:20px;background-color:#f8f8f8;font-size:14px;line-height: 20px;}
+
+
+/* 页面切换按钮 */
+.m-main .m-m .m-page{width: 302px;text-align: center;float: right;margin-bottom: 20px;}
+.m-main .m-m .m-page a+a{margin-left:10px; }
+.m-main .m-m .m-page .page{display: inline-block;font-weight: bold;width: 20px;height: 20px;line-height: 20px;display: inline-block;}
+.m-main .m-m .m-page  .page.page-active{color: #39a030;}
+.m-main .m-m .m-page  .page:hover{background: #9dd8b1;color: #fff;}
+.prv,.nxt{background: #9dd8b1;color: #fff;font-weight: bold;width: 30px;height: 20px;line-height: 20px;cursor: pointer;display: inline-block;}
+.disable{background: #999797;}
+
+/* 1-课程主体模块结束 */
+
+/* 2-侧栏 */
+/* 机构介绍 */
+.m-main .m-t{float: left;width: 222px;height: 100%;}
+.m-main .m-t .insti{height: 235px;background: #fff;box-shadow: 2px 2px 2px #d4d3d3;border: 1px solid #ddd;border-top: none;margin-bottom: 22px;}
+.m-main .m-t .insti h3{font-size: 16px;border-bottom: 1px solid #dddddd; padding: 20px;}
+.m-main .m-t .insti div{font-size: 14px;padding: 20px;}
+.m-main .m-t .insti img{margin-top:10px;cursor: pointer;}
+.m-main .m-t .insti #videoPop{display: none; position: fixed;width: 890px;top: 50%;left: 50%;margin: -300px 0 0 -475px;z-index: 999;background: #fff;font-size: 18px;padding: 30px;}
+.m-main .m-t .insti #videoPop span{position: absolute;top: 20px;right: 20px;width: 20px;height: 20px;background: url(../image/icon.png) -204px -31px; cursor: pointer;}
+.m-main .m-t .insti #videoPop video{margin-top: 20px;}
+
+/* 最热排行 */
+.m-main .m-t .hot{background: #fff;box-shadow: 2px 2px 2px #d4d3d3;border: 1px solid #ddd;border-top: none;margin-bottom: 22px;}
+.m-main .m-t .hot h3{font-size: 16px;border-bottom: 1px solid #ddd; padding: 20px;}
+.m-main .m-t .hot .m-hot{position: relative;overflow: hidden;height: 720px;padding: 0 20px;}
+.m-main .m-t .hot ul{font-size: 14px;position: absolute;cursor: pointer;}
+.m-main .m-t .hot ul li{margin-top: 20px;height: 50px;overflow: hidden;}
+.m-main .m-t .hot .hotname{float: left; width: 121px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.m-main .m-t .hot img{width: 50px;height:50px; margin-right:10px;float: left;}
+.m-main .m-t .hot .num{display: inline-block;width: 50px;background: url(../image/icon.png) -5px -2px;text-indent: 12px;font-size: 11px;padding-top: 1px;color: #9c999c;margin-top: 10px;}
+
+
+/* 底栏 */
+.g-foot{height: 262px;background: #2c3339;overflow: hidden;}
+.g-foot .g-wrap{margin: 80px auto;}
+.g-foot .g-wrap div{float: left;height: 90px;font-size: 12.5px;}
+.g-foot .g-wrap div p{height: 25px;line-height: 25px;color: #bebfc0;}
+.g-foot .g-wrap #logo{font-size: 28px;color: #39a030;height: 48px;}
+.g-foot .g-wrap ul{height: 90px;float: left;color: #bebfc0;}
+.g-foot .g-wrap ul li{display: block;height: 25px;color: #bebfc0;}
+.g-foot .g-wrap ul a{color: #bebfc0;font-size: 15px;}
+.g-foot .g-wrap ul a.blog{background: url(../image/icon.png) -140px -34px no-repeat;display: inline-block;width: 62px;}
+.g-foot .g-wrap ul a:hover{text-decoration: underline;}
