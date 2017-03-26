@@ -370,7 +370,7 @@ function scroll() {
 		showPic();
 	});
 }
-setTimeOut(scroll,0);//调用
+setTimeout(scroll,0);//调用
 
 /* 播放视频 */
 eventUtil.addHandler($("v-img"),"click",function () {
